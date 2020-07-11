@@ -1,0 +1,44 @@
+{
+  "name": "algorytmy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add1": "nodemon src/add1.js",
+    "objcects": "nodemon src/objcects.js",
+    "arrays": "nodemon src/arrays.js",
+    "validAnagram": "nodemon src/validAnagram.js",
+    "arr1": "nodemon src/arr1.js",
+    "app": "nodemon src/app.js",
+    "start": "node --inspect=5858 -r ts-node/register ./src/server.ts",
+    "start:watch": "nodemon",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
+    "eslint": "^7.3.1",
+    "eslint-plugin-import": "^2.21.2",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "ts-jest": "^26.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": [
+      "src"
+    ],
+    "exec": "npm start",
+    "ext": "ts"
+  }
+}
