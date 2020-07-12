@@ -1,24 +1,46 @@
 // import { DoublyLinkedList } from './dataStr/DoublyLinkedList';
 // import { BinarySerchTree, Node } from "./dataStr/BinarySerchTree";
 
-import { HashTable } from "./datasStructure/HashTable";
+import { Graph } from "./datasStructure/Graph";
+
+// import { HashTable } from "./datasStructure/HashTable";
 
 
-let ht = new HashTable(4)
-ht.set('jaja', 5)
-ht.set('jajaj', 5)
-ht.set('jaja4', 5)
-ht.set('jajea4', 5)
-ht.set('jajea4', 5)
+let graph = new Graph()
+graph.addVertex('Dama1')
+graph.addVertex('Dama2')
+graph.addVertex('Dama3')
+graph.addVertex('Dama4')
 
-ht.set('jarej44a4', 5)
+graph.addEdge('Dama1', 'Dama2')
+graph.addEdge('Dama4', 'Dama2')
+
+console.log(graph);
+
+// graph.removeEdge('Dama4', 'Dama2')
+
+// console.log(graph);
+graph.removeVertex('Dama4')
+
+console.log(graph);
+// let ht = new HashTable(4)
+// ht.set('jaja', 5)
+// ht.set('jajaj', 53)
+// ht.set('jajae', 54)
+// ht.set('jajea', 55)
+// ht.set('jajea', 65)
+// ht.set('jareja', 65)
 
 
-console.log(ht.keyMap);
+// console.log(ht.keyMap);
 
-console.log(ht.get('jaja'))
+// console.log(ht.get('jaja'))
 
-
+// ht.values()
+// ht.keys().forEach(item => {
+//     console.log(item);
+    
+// })
 
 // import { hash } from "./dataStr/hash";
 // hash("aink", 69)
