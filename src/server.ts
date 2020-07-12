@@ -1,25 +1,48 @@
 // import { DoublyLinkedList } from './dataStr/DoublyLinkedList';
 // import { BinarySerchTree, Node } from "./dataStr/BinarySerchTree";
 
-
-import { PriorityQueue } from "./dataStr/PriorityQueue";
-
-let tree = new PriorityQueue()
+import { HashTable } from "./datasStructure/HashTable";
 
 
-tree.enqueue('dd 41', 1)
-tree.enqueue('44 3', 3)
-tree.enqueue('wer 1', 4)
-tree.enqueue('sraczka ', 54)
-tree.enqueue('3423', 6)
-tree.enqueue('janek', 2)
-tree.enqueue('banek', 5)
-console.log(tree.dequeue())
-console.log(tree.dequeue())
-console.log(tree.dequeue())
+let ht = new HashTable(4)
+ht.set('jaja', 5)
+ht.set('jajaj', 5)
+ht.set('jaja4', 5)
+ht.set('jajea4', 5)
+ht.set('jajea4', 5)
+
+ht.set('jarej44a4', 5)
 
 
-console.log(tree)
+console.log(ht.keyMap);
+
+console.log(ht.get('jaja'))
+
+
+
+// import { hash } from "./dataStr/hash";
+// hash("aink", 69)
+// hash("ainksd", 69)
+// hash("ainfgdfgdfgksd", 69)
+
+
+
+
+// let tree = new PriorityQueue()
+
+
+// tree.enqueue('dd 41', 1)
+// tree.enqueue('44 3', 3)
+// tree.enqueue('wer 1', 4)
+// tree.enqueue('sraczka ', 54)
+// tree.enqueue('3423', 12)
+// tree.enqueue('janek', 2)
+// tree.enqueue('banek', 5)
+// console.log(tree.dequeue())
+// console.log(tree.dequeue())
+
+
+// console.log(tree)
 
 // let tree = new BinarySerchTree();
 // tree.insert(10)
