@@ -7,13 +7,14 @@ import { MaxBinaryHeap } from "./dataStr/MaxBinaryHeap";
 let tree = new MaxBinaryHeap()
 
 
-tree.insert(33)
 tree.insert(41)
-tree.insert(23)
-tree.insert(434)
-tree.insert(44)
-tree.insert(43)
-tree.insert(355)
+tree.insert(39)
+tree.insert(33)
+tree.insert(18)
+tree.insert(27)
+tree.insert(12)
+tree.insert(55)
+tree.extarctMax()
 tree.extarctMax()
 
 
