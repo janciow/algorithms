@@ -2,20 +2,21 @@
 // import { BinarySerchTree, Node } from "./dataStr/BinarySerchTree";
 
 
-import { MaxBinaryHeap } from "./dataStr/MaxBinaryHeap";
+import { PriorityQueue } from "./dataStr/PriorityQueue";
 
-let tree = new MaxBinaryHeap()
+let tree = new PriorityQueue()
 
 
-tree.insert(41)
-tree.insert(39)
-tree.insert(33)
-tree.insert(18)
-tree.insert(27)
-tree.insert(12)
-tree.insert(55)
-tree.extarctMax()
-tree.extarctMax()
+tree.enqueue('dd 41', 1)
+tree.enqueue('44 3', 3)
+tree.enqueue('wer 1', 4)
+tree.enqueue('sraczka ', 54)
+tree.enqueue('3423', 6)
+tree.enqueue('janek', 2)
+tree.enqueue('banek', 5)
+console.log(tree.dequeue())
+console.log(tree.dequeue())
+console.log(tree.dequeue())
 
 
 console.log(tree)
