@@ -7,22 +7,37 @@ import { Graph } from "./datasStructure/Graph";
 
 
 let graph = new Graph()
-graph.addVertex('Dama1')
-graph.addVertex('Dama2')
-graph.addVertex('Dama3')
-graph.addVertex('Dama4')
+graph.addVertex('A')
+graph.addVertex('B')
+graph.addVertex('C')
+graph.addVertex('D')
+graph.addVertex('E')
+graph.addVertex('F')
 
-graph.addEdge('Dama1', 'Dama2')
-graph.addEdge('Dama4', 'Dama2')
+
+
+graph.addEdge('A', 'B')
+graph.addEdge('A', 'C')
+graph.addEdge('B', 'D')
+graph.addEdge('C', 'E')
+graph.addEdge('D', 'E')
+graph.addEdge('D', 'F')
+graph.addEdge('E', 'F')
 
 console.log(graph);
+
+console.log(graph.DFSrecursive('A'));
+
+console.log(graph.DFSIterative('A'));
+
+console.log(graph.breadthFirst('A'));
 
 // graph.removeEdge('Dama4', 'Dama2')
 
 // console.log(graph);
-graph.removeVertex('Dama4')
+// graph.removeVertex('Dama4')
 
-console.log(graph);
+// console.log(graph);
 // let ht = new HashTable(4)
 // ht.set('jaja', 5)
 // ht.set('jajaj', 53)
