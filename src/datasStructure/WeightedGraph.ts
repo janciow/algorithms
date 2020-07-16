@@ -40,7 +40,11 @@ export class WeightedGraph {
 
                 console.log(distances);
                 console.log(previous);
-
+                while (previous[smalest]) {
+                    path.push(smalest)
+                    smalest = previous[smalest]
+                }
+                break
                 // WE are don
             }
 
@@ -59,7 +63,7 @@ export class WeightedGraph {
 
                 }
             }
-
+            return path.concat(smalest).reverse()
         }
 
     }

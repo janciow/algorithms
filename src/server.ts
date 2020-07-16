@@ -1,28 +1,41 @@
 // import { PriorityQueueBasic } from "./datasStructure/PriorityQueueBasic";
-import { WeightedGraph } from "./datasStructure/WeightedGraph";
+// import { WeightedGraph } from "./datasStructure/WeightedGraph";
 
+import { fib, fibTabulated } from "./datasStructure/Fib";
 
-const wg = new WeightedGraph()
+console.log(fib(0));
+ console.log(fib(1));
+ console.log(fib(2));
+ console.log(fib(3));
+ console.log(fib(4));
+ console.log(fib(5));
+ console.log(fib(6));
+ console.log(fib(43));
+ console.log(fib(53));
+ console.log(fib(603));
+ console.log(fibTabulated(603));
 
-wg.addVertex("A")
-wg.addVertex("B")
-wg.addVertex("C")
-wg.addVertex("D")
-wg.addVertex("E")
-wg.addVertex("F")
+// const wg = new WeightedGraph()
 
-wg.addEdge("A", "B", 4)
-wg.addEdge("A", "C", 2)
-wg.addEdge("B", "E", 3)
-wg.addEdge("C", "D", 2)
-wg.addEdge("C", "F", 4)
-wg.addEdge("D", "E", 3)
-wg.addEdge("D", "F", 1)
-wg.addEdge("E", "F", 1)
+// wg.addVertex("A")
+// wg.addVertex("B")
+// wg.addVertex("C")
+// wg.addVertex("D")
+// wg.addVertex("E")
+// wg.addVertex("F")
 
-wg.Dijkstra("A", "F")
+// wg.addEdge("A", "B", 4)
+// wg.addEdge("A", "C", 2)
+// wg.addEdge("B", "E", 3)
+// wg.addEdge("C", "D", 2)
+// wg.addEdge("C", "F", 4)
+// wg.addEdge("D", "E", 3)
+// wg.addEdge("D", "F", 1)
+// wg.addEdge("E", "F", 1)
 
-// console.log();
+// wg.Dijkstra("A", "F")
+
+// console.log(wg.Dijkstra("A", "F"));
 
 
 // console.log(wg);
