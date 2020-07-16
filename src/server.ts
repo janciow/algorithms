@@ -1,21 +1,41 @@
-// import { DoublyLinkedList } from './dataStr/DoublyLinkedList';
-// import { BinarySerchTree, Node } from "./dataStr/BinarySerchTree";
+// import { PriorityQueueBasic } from "./datasStructure/PriorityQueueBasic";
+import { WeightedGraph } from "./datasStructure/WeightedGraph";
 
-import { PriorityQueueBasic } from "./datasStructure/PriorityQueueBasic";
 
-// import { Graph } from "./datasStructure/Graph";
-// import { WeightedGraph } from "./datasStructure/WeightedGraph";
+const wg = new WeightedGraph()
 
-// import { HashTable } from "./datasStructure/HashTable";
+wg.addVertex("A")
+wg.addVertex("B")
+wg.addVertex("C")
+wg.addVertex("D")
+wg.addVertex("E")
+wg.addVertex("F")
 
-let q = new PriorityQueueBasic();
+wg.addEdge("A", "B", 4)
+wg.addEdge("A", "C", 2)
+wg.addEdge("B", "E", 3)
+wg.addEdge("C", "D", 2)
+wg.addEdge("C", "F", 4)
+wg.addEdge("D", "E", 3)
+wg.addEdge("D", "F", 1)
+wg.addEdge("E", "F", 1)
 
-q.enqueue("D", 23)
-q.enqueue("A", 2)
-q.enqueue("Q", 20)
-q.sort()
+wg.Dijkstra("A", "F")
 
-console.log(q);
+// console.log();
+
+
+// console.log(wg);
+
+
+// let q = new PriorityQueueBasic();
+
+// q.enqueue("D", 23)
+// q.enqueue("A", 2)
+// q.enqueue("Q", 20)
+// q.sort()
+
+// console.log(q);
 
 // let graph = new WeightedGraph()
 // graph.addVertex('A')
