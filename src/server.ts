@@ -1,36 +1,66 @@
 // import { DoublyLinkedList } from './dataStr/DoublyLinkedList';
 // import { BinarySerchTree, Node } from "./dataStr/BinarySerchTree";
 
-import { Graph } from "./datasStructure/Graph";
+import { PriorityQueueBasic } from "./datasStructure/PriorityQueueBasic";
+
+// import { Graph } from "./datasStructure/Graph";
+// import { WeightedGraph } from "./datasStructure/WeightedGraph";
 
 // import { HashTable } from "./datasStructure/HashTable";
 
+let q = new PriorityQueueBasic();
 
-let graph = new Graph()
-graph.addVertex('A')
-graph.addVertex('B')
-graph.addVertex('C')
-graph.addVertex('D')
-graph.addVertex('E')
-graph.addVertex('F')
+q.enqueue("D", 23)
+q.enqueue("A", 2)
+q.enqueue("Q", 20)
+q.sort()
+
+console.log(q);
+
+// let graph = new WeightedGraph()
+// graph.addVertex('A')
+// graph.addVertex('B')
+// graph.addVertex('C')
+// graph.addVertex('D')
+// graph.addVertex('E')
+// graph.addVertex('F')
+
+
+// graph.addEdge('A', 'B', 4)
+// graph.addEdge('A', 'C', 2)
+// graph.addEdge('B', 'E', 3)
+// graph.addEdge('C', 'D', 2)
+// graph.addEdge('C', 'F', 4)
+// graph.addEdge('D', 'F', 1)
+// graph.addEdge('D', 'E', 3)
+// graph.addEdge('F', 'E', 1)
+
+
+// let graph = new Graph()
+// graph.addVertex('A')
+// graph.addVertex('B')
+// graph.addVertex('C')
+// graph.addVertex('D')
+// graph.addVertex('E')
+// graph.addVertex('F')
 
 
 
-graph.addEdge('A', 'B')
-graph.addEdge('A', 'C')
-graph.addEdge('B', 'D')
-graph.addEdge('C', 'E')
-graph.addEdge('D', 'E')
-graph.addEdge('D', 'F')
-graph.addEdge('E', 'F')
+// graph.addEdge('A', 'B')
+// graph.addEdge('A', 'C')
+// graph.addEdge('B', 'D')
+// graph.addEdge('C', 'E')
+// graph.addEdge('D', 'E')
+// graph.addEdge('D', 'F')
+// graph.addEdge('E', 'F')
 
-console.log(graph);
+// console.log(graph);
 
-console.log(graph.DFSrecursive('A'));
+// console.log(graph.DFSrecursive('A'));
 
-console.log(graph.DFSIterative('A'));
+// console.log(graph.DFSIterative('A'));
 
-console.log(graph.breadthFirst('A'));
+// console.log(graph.breadthFirst('A'));
 
 // graph.removeEdge('Dama4', 'Dama2')
 
@@ -54,7 +84,7 @@ console.log(graph.breadthFirst('A'));
 // ht.values()
 // ht.keys().forEach(item => {
 //     console.log(item);
-    
+
 // })
 
 // import { hash } from "./dataStr/hash";
